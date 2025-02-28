@@ -1,5 +1,5 @@
 # Dahdidahdit-usb
-This is a usb cw adapter to use a cw paddle on your phone with the [Dahdidahdir](https://github.com/matthiasjordan/dahdidahdit) app.
+This is a usb cw adapter to use a cw paddle on your phone with the [Dahdidahdit](https://github.com/matthiasjordan/dahdidahdit) app.
 This project uses a Seeeduino XIAO.
 
 ## Wiring
