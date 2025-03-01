@@ -8,6 +8,8 @@ template <int pin, char key> void interruptHandler() {
   attachInterrupt(
       digitalPinToInterrupt(pin),
       []() {
+        // inverted logic, the pin is pulled high when not pressed
+        // -> if high release key
         auto pressed = digitalRead(pin);
         if (pressed) {
           Keyboard.release(key);
