@@ -8,8 +8,8 @@ template <int pin, char key> void interruptHandler() {
   attachInterrupt(
       digitalPinToInterrupt(pin),
       []() {
-        auto dah = digitalRead(pin);
-        if (dah) {
+        auto pressed = digitalRead(pin);
+        if (pressed) {
           Keyboard.release(key);
         } else {
           Keyboard.press(key);
